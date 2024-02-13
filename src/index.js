@@ -14,6 +14,7 @@ import TestUseRef from "./Components/TestUseRef"
 import sideBar from "./Components/SideBar"
 import TestList from "./Components/TestList"
 import TestAppBar from "./Components/TestAppBar"
+import TestBrootstrap20240213 from './Components/TestBrootstrap20240213';
 
 import {
   createBrowserRouter,
@@ -26,6 +27,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <Root/>,
     errorElement: <ErrorPage />,
+    //With children systax, Below page show in the same page
     children: [
       {path: "contacts/:contactId",element: <Contact />,},      
       {path: "list-product",element:<ListProduct/>,},
@@ -33,8 +35,10 @@ const router = createBrowserRouter([
       {path:"testUseRef",element:<TestUseRef/>},     
       
       
+      
     ],
   },
+  //No childer systax, page show in a new page (no pop up)
   {
     path:"sideBar",
     element:<SideBar/>,
@@ -44,6 +48,7 @@ const router = createBrowserRouter([
     element:<TestList/>,
   },
   {path:"testAppBar",element:<TestAppBar/>},
+  {path:"testBrootstrap20240213",element:<TestBrootstrap20240213/>},     
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
