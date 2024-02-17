@@ -15,12 +15,13 @@ import sideBar from "./Components/SideBar"
 import TestList from "./Components/TestList"
 import TestAppBar from "./Components/TestAppBar"
 import TestBrootstrap20240213 from './Components/TestBrootstrap20240213';
-
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 import SideBar from './Components/SideBar';
+import NewIndex1 from './Components/NewIndex1';
+import NewIndex1Details from './Components/NewIndex1Details';
 
 const router = createBrowserRouter([
   {
@@ -49,6 +50,9 @@ const router = createBrowserRouter([
   },
   {path:"testAppBar",element:<TestAppBar/>},
   {path:"testBrootstrap20240213",element:<TestBrootstrap20240213/>},     
+  {path:"/newindex1",element:<NewIndex1/>},     
+  {path:"/newindex1details/:index_id/:location",element:<NewIndex1Details/>},     
+  
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
