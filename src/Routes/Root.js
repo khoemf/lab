@@ -18,6 +18,8 @@ export default function Root() {
               <li><Link to= {`testAppBar`}>Test App Bar</Link></li>              
               <li><Link to= {`testBrootstrap20240213`}>BootStrap 20240213</Link></li>
               <li><Link to='/newindex1'>New Index page 1</Link></li>
+              <li><Link to='/Menu20240225'>Menu20240225</Link></li>
+              
               
             </ul>
           </nav>
