@@ -19,7 +19,11 @@ export default function Root() {
               <li><Link to= {`testBrootstrap20240213`}>BootStrap 20240213</Link></li>
               <li><Link to='/newindex1'>New Index page 1</Link></li>
               <li><Link to='/Menu20240225'>Menu20240225</Link></li>
-              
+              <li><Link to='/TestForm20240512'>TestForm20240512</Link></li>
+              <li><Link to='/TestForm202405122244'>TestForm202405122244</Link></li>
+              <li><Link to='/TestForm20240513'>TestForm20240513</Link></li>
+              <li><Link to='/Axios20240515'>Axios20240515</Link></li>
+              <li><Link to='/TestUseRef20240515'>TestUseRef20240515</Link></li>
               
             </ul>
           </nav>

@@ -16,6 +16,12 @@ import TestList from "./Components/TestList"
 import TestAppBar from "./Components/TestAppBar"
 import TestBrootstrap20240213 from './Components/TestBrootstrap20240213';
 import Menu20240225 from './Components/Menu20240225';
+import TestForm20240512 from './Components/TestForm20240512';
+import TestForm202405122244 from './Components/TestForm202405122244';
+import TestForm20240513 from './Components/TestForm20240513';
+import Axios20240515 from './Components/Axios20240515';
+import TestUseRef20240515 from './Components/TestUseRef20240515';
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -38,6 +44,7 @@ const router = createBrowserRouter([
       
       
       
+      
     ],
   },
   //No childer systax, page show in a new page (no pop up)
@@ -54,6 +61,12 @@ const router = createBrowserRouter([
   {path:"/newindex1",element:<NewIndex1/>},     
   {path:"/newindex1details/:index_id/:location",element:<NewIndex1Details/>},     
   {path:"/Menu20240225/",element:<Menu20240225/>},         
+  {path:"/TestForm20240512/",element:<TestForm20240512/>},
+  {path:"/TestForm202405122244/",element:<TestForm202405122244/>},
+  {path:"/TestForm20240513/",element:<TestForm20240513/>},
+  {path:"/Axios20240515/",element:<Axios20240515/>},
+  {path:"/TestUseRef20240515/",element:<TestUseRef20240515/>},
+  
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
