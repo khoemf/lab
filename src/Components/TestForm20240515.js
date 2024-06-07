@@ -5,7 +5,7 @@ import { useState, useRef } from "react";
 export default function TestForm20240515() {
   const txtNoOfInputRef = useRef(null);
 
-  const [noOfInput, setNoOfInput] = useState("--");
+  const [noOfInput, setNoOfInput] = useState("Dummy Text");
 
   const handleAddInput = () =>{
     setNoOfInput(txtNoOfInputRef.current.value);
@@ -13,14 +13,16 @@ export default function TestForm20240515() {
 
   return (
     <>
-      <h1>Testing for adding dynamic input</h1>
+      <h1>Testing for Input dynamic input</h1>
+      <br/>
+      This update the display by not using onChange()<br/>
       <br />
-      Number of element that you want to add:{" "}
-      <input type="text" name="txtNoOfInput" ref={txtNoOfInputRef} />
+      Key in your text / number:{" "}
+      <input type="text" name="txtNoOfInput" defaultValue={noOfInput} ref={txtNoOfInputRef} />
       <br />
-      <button name="Add" onClick={handleAddInput}>Add</button>
+      <button name="Add" onClick={handleAddInput}>Refresh</button>
       <hr />
-      Request Number of new Element : {noOfInput}
+      <b>What value have you input</b> : {noOfInput}
     </>
   );
 }
