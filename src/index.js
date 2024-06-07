@@ -21,6 +21,8 @@ import TestForm202405122244 from './Components/TestForm202405122244';
 import TestForm20240513 from './Components/TestForm20240513';
 import Axios20240515 from './Components/Axios20240515';
 import TestUseRef20240515 from './Components/TestUseRef20240515';
+import TestForm20240515 from './Components/TestForm20240515';
+import Test20240520 from './Components/Test20240520';
 
 import {
   createBrowserRouter,
@@ -66,6 +68,8 @@ const router = createBrowserRouter([
   {path:"/TestForm20240513/",element:<TestForm20240513/>},
   {path:"/Axios20240515/",element:<Axios20240515/>},
   {path:"/TestUseRef20240515/",element:<TestUseRef20240515/>},
+  {path:"/TestForm20240515/",element:<TestForm20240515/>},
+  {path:"/Test20240520/",element:<Test20240520/>},
   
 ]);
 

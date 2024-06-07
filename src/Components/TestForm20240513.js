@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
 
+//reference: https://www.freecodecamp.org/news/build-dynamic-forms-in-react/
+
 export default function TestForm20240513() {
 
     const [age, setAge] = useState(28);
