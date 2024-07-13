@@ -23,6 +23,7 @@ import Axios20240515 from './Components/Axios20240515';
 import TestUseRef20240515 from './Components/TestUseRef20240515';
 import TestForm20240515 from './Components/TestForm20240515';
 import Test20240520 from './Components/Test20240520';
+import CallAPI20240703 from './Components/CallAPI20240703';
 
 import {
   createBrowserRouter,
@@ -70,6 +71,8 @@ const router = createBrowserRouter([
   {path:"/TestUseRef20240515/",element:<TestUseRef20240515/>},
   {path:"/TestForm20240515/",element:<TestForm20240515/>},
   {path:"/Test20240520/",element:<Test20240520/>},
+  {path:"/CallAPI20240703/",element:<CallAPI20240703/>},
+  
   
 ]);
 

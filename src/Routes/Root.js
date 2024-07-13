@@ -26,6 +26,7 @@ export default function Root() {
               <li><Link to='/TestUseRef20240515'>TestUseRef20240515</Link></li>
               <li><Link to='/TestForm20240515'>TestForm20240515</Link></li>
               <li><Link to='/Test20240520'>Test20240520</Link></li>
+              <li><Link to='/CallAPI20240703'>CallAPI20240703</Link></li>
               
             </ul>
           </nav>
