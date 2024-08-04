@@ -6,12 +6,9 @@ import reportWebVitals from './reportWebVitals';
 import Root from './Routes/Root'
 import ErrorPage from './Components/ErrorPage'
 import Contact from "./Routes/Contact";
-import Product from "./Components/Product";
-import Welcome from "./Components/Welcome";
 import ListProduct from "./Components/ListProduct";
 import TestForm from "./Components/TestForm"
 import TestUseRef from "./Components/TestUseRef"
-import sideBar from "./Components/SideBar"
 import TestList from "./Components/TestList"
 import TestAppBar from "./Components/TestAppBar"
 import TestBrootstrap20240213 from './Components/TestBrootstrap20240213';
@@ -23,7 +20,9 @@ import Axios20240515 from './Components/Axios20240515';
 import TestUseRef20240515 from './Components/TestUseRef20240515';
 import TestForm20240515 from './Components/TestForm20240515';
 import Test20240520 from './Components/Test20240520';
-import CallAPI20240703 from './Components/CallAPI20240703';
+import Test20240727 from './Components/Test20240727';
+import Test20240803 from './Components/Test20240803';
+import Test20240804 from './Components/Test20240804';
 
 import {
   createBrowserRouter,
@@ -59,6 +58,7 @@ const router = createBrowserRouter([
     path:"testList",
     element:<TestList/>,
   },
+  {path:"/App",element:<App/>},
   {path:"testAppBar",element:<TestAppBar/>},
   {path:"testBrootstrap20240213",element:<TestBrootstrap20240213/>},     
   {path:"/newindex1",element:<NewIndex1/>},     
@@ -71,7 +71,9 @@ const router = createBrowserRouter([
   {path:"/TestUseRef20240515/",element:<TestUseRef20240515/>},
   {path:"/TestForm20240515/",element:<TestForm20240515/>},
   {path:"/Test20240520/",element:<Test20240520/>},
-  {path:"/CallAPI20240703/",element:<CallAPI20240703/>},
+  {path:"/Test20240727/",element:<Test20240727/>},
+  {path:"/Test20240803/",element:<Test20240803/>},
+  {path:"/Test20240804/",element:<Test20240804/>},
   
   
 ]);
