@@ -29,8 +29,20 @@ export default function Root() {
               <li><Link to='/Test20240520'>Test20240520</Link></li>              
               <li><Link to='/Test20240727'>Test20240727</Link> (Conditional Rending)</li>
               <li><Link to='/Test20240803'>Test20240803</Link> (Display API return,conditional rending)</li>
-              <li><Link to='/Test20240804'>Test20240804</Link> (Call API function style)</li>
-    
+              <li><Link to='/Test20240804'>Test20240804</Link> (Call API function <b>coding</b> style in useEffect())</li>
+              <li><Link to='/Test2024080402'>Test2024080402</Link> (base on Test20240804, handle display API return data, with $isLoading)</li>
+              <li><Link to='/Test2024080403'>Test2024080403</Link> (base on Test2024080402, <b>rendering</b> with <b>"Immediately Invoked Function Expressions" {`{(() =>{})()}`}</b>) inside <b>return()</b></li>
+              <li><Link to='/Test2024080404'>Test2024080404</Link>
+                  <ol>
+                    <li>base on Test2024080403, conditional rendering components</li>
+                    <li>Store final display in variable <b>$display</b>. Conditional calculate value of $display <b>outside</b> return()</li>
+                    <li>With <b>With Object Destructuring Alias</b> (normal use Test2024080404ShowData())</li>
+                    <li><b>Two components</b> in a single file</li>
+                  </ol>
+               
+               </li>
+               <li><Link to='/Test2024080405'>Test2024080405</Link>  Conditional Rendering 2 : Logical <b>&& ||</b> Operator</li>              
+               
               
               
             </ul>

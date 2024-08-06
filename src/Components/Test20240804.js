@@ -47,6 +47,7 @@ export default function Test20240804() {
       });
   };
 
+  //Prefer use this style for long term 20240804
   const getListOfProductsOutSideUseEffect3 = async () => {
     try {
       const response = await axios.get(cfgAllProductsAPI);
