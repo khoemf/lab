@@ -43,7 +43,7 @@ export default function Root() {
                </li>
                <li><Link to='/Test2024080405'>Test2024080405</Link>  Conditional Rendering 2 : Logical <b>&& ||</b> Operator</li>              
                
-              
+               <li><Link to='/Test20240807'>Test20240807</Link> 1) useState: mutable / immutable / update previous value. 2) get Form Input </li>              
               
             </ul>
           </nav>

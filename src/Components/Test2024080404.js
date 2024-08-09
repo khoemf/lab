@@ -39,6 +39,7 @@ export function Test2024080404ShowData({objProducts}) {
 }
 
 export function Test2024080404ShowDataWithObjectDestructuringAlias({objProducts:productsDetails}) {
+  // objProducts:productsDetails , use :   productsDetails become alias of the name of objProducts
   return productsDetails.map((product, i) => {
     return (
       <tr key={i}>
