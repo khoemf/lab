@@ -5,6 +5,11 @@ import React from "react";
 //reference: https://www.geeksforgeeks.org/javascript-logical-and-assignment-operator/
 
 //reference: https://www.w3schools.com/js/js_assignment.asp
+/*
+&&=	x &&= y	x = x && (x = y)
+||=	x ||= y	x = x || (x = y)
+??=	x ??= y	x = x ?? (x = y)
+ */
 
 //reference: https://react.dev/learn/conditional-rendering
 export function Test2024080405Component1() {
