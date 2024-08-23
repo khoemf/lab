@@ -32,7 +32,10 @@ export default function Test20240807() {
     //notes: use immutable to update $aryPerson. Return a new array and assign back to aryPerson
     setAryPerson((preData) => {
       return [
+        //insert all existing data (...preData) into the new array first
         ...preData,
+
+        //add a new element/object to the end of the array
         {
           name: txtName.current.value,
           age: txtAge.current.value,

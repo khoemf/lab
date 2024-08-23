@@ -134,7 +134,7 @@ export default function Root() {
               <Link to="/Test20240810a">Test20240810a</Link>
               <ol>
                 <li>Demo Html Input text element. Using attribute <b>value</b> vs <b>defaultValue</b></li>
-                
+                <li>In console log, there is a warning is correct. Since value attribute is set. You may remove "value" and the warning will be removed</li>
               </ol>
             </li>
 
@@ -151,6 +151,14 @@ export default function Root() {
               </ol>
             </li>
             
+            <li><Link to="/Test20240818">Test20240818</Link>
+              <ol>
+                <li>Passing $children as a magic / default props variable into a component</li>
+                <li>Learn passing $...props (Rest Property) inside components </li>
+                <li>Reference : udemy : 65. Problem: Props Are Not Forwarded To Inner Elements</li>
+                
+              </ol>
+            </li>
           </ul>
         </nav>
         <br/><br/>

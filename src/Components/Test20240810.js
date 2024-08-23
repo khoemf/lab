@@ -61,17 +61,17 @@ export default function Test20240810() {
         <textarea name="message" id="message" cols="30" rows="4"></textarea>
         <br />
         <br />
-        <input type="checkbox" name="newsletter" id="newsletter" value="newsletter_is_yes"/>
-        <label htmlFor="newsletter">Subscribe?</label>
+        <input type="checkbox" name="newsletter" id="chkSubscribe" value="newsletter_is_yes"/>
+        <label htmlFor="chkSubscribe">Subscribe?</label>
         <br />
         <br />
         online Channel <br/>
-        <input type="checkbox" name="onlineChannel" id="netflix" value="netflix"/>&nbsp;
-        <label htmlFor="newsletter">netflix</label><br/>
-        <input type="checkbox" name="onlineChannel" id="mytvsuper" value="mytvsuper"/>&nbsp;
-        <label htmlFor="newsletter">mytvsuper</label><br/>
-        <input type="checkbox" name="onlineChannel" id="ddisney" value="disney"/>&nbsp;
-        <label htmlFor="newsletter">disney+</label><br/>
+        <input type="checkbox" name="onlineChannel" id="chkNetflix" value="netflix"/>&nbsp;
+        <label htmlFor="chkNetflix">netflix</label><br/>
+        <input type="checkbox" name="onlineChannel" id="chkMytvsuper" value="mytvsuper"/>&nbsp;
+        <label htmlFor="chkMytvsuper">mytvsuper</label><br/>
+        <input type="checkbox" name="onlineChannel" id="chkDisney" value="disney"/>&nbsp;
+        <label htmlFor="chkDisney">disney+</label><br/>
         <br/>
         <button>Submit</button>
       </form>
