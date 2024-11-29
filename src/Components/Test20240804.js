@@ -84,6 +84,8 @@ export default function Test20240804() {
     //Prefer use this style for long term 20240804
     //method : similar to getListOfProductsOutSideUseEffect()
     //     but it demo not to use async/await function 
+    //Important: If there is more than one API need to call, it suggest put it all into one function to call
+    //           Do not try to call multiple API with two function in useEffect()
     getListOfProductsOutSideUseEffect3();
 
     /*
