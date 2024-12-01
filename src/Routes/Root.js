@@ -70,8 +70,8 @@ export default function Root() {
               return,conditional rending)
             </li>
             <li>
-              <Link to="/Test20240804">Test20240804</Link> (Call API function{" "}
-              <b>coding</b> style in useEffect())
+              <Link to="/Test20240804">Test20240804</Link> Call API function
+              <b>coding</b> style in useEffect(), with a prefer run and declare useEffect style
             </li>
             <li>
               <Link to="/Test2024080402">Test2024080402</Link> (base on
@@ -160,8 +160,69 @@ export default function Root() {
               </ol>
             </li>
             <li><Link to="/Test20241130">Test20241130</Link>
-              
+            <ol>
+                <li>Never  updates state out of event handler or useEffect, other it cause "Too many re-renders"</li>
+                <li>study declaring Anonymous Functions vs Named Functions vs Arrow Functions</li>                
+                <li>Style: named function (traditional/classic one)</li>
+                <li>Style: anonymous function (Traditional anonymous function)</li>
+                <li>Style: arrow function</li>
+                <li>Style: arrow function , one line only , more than one argument</li>
+                <li>Style: arrow function   one argument , one statement</li>
+                <li>Style: arrow function, without argument</li>
+                <li>Style: anonymous function , inline function</li>
+                
+              </ol>
             </li>
+            <li><Link to="/Test2024113001">Test2024113001</Link>
+                    <ol>
+                      <li>Base on exercise <b>Test20241130</b></li>
+                      <li>Study using Anonymous Functions , Named Functions,  Arrow Functions in <b>Callback</b> function</li>
+                      <li>Using array.map() to test</li>
+                      <li>Study Note: 
+                        <ol>
+                          <li>Since array.map() receive a <b>function</b> as the variable/argument, 
+                            so you may declare a function either by arrow , anonymous , named to a $variable. 
+                            Then pass the $variable into map(). It works because the data type for the $variable is a "<b>function</b>".
+                            </li>
+                            <li>
+                            But it only needs to pass the $variable to map() only, no need to consider how to pass array value to the $variable ,  
+                            the $variable receive array value/argument by map() with AUTO. You cannot set to the variable.
+                            "The argument pass to $variable" seems is the special handling in <b>CALLBACK</b> function
+                            </li>
+                        <li>it can pass Anonymous Functions, Named Functions, Arrow Functions in Callback function</li>
+                        <li>it can pass the three type function as argument (declare the funciton) into map()</li>
+                        </ol>
+                        </li>
+                    </ol>
+            </li>
+            Test2024120101
+            <li><Link to="/Test20241201">Test20241201</Link>
+            <ol>
+              <li>Study JS CALLBACK Mechanism</li>
+              <li>Write a function to receive callback function , and call the callback function</li>
+            <li>Base on exercise <b>Test2024113001</b></li>
+            <li>Study Points is how to pass argument to a callback function, <br/>how to know the calling function will pass how many argument into the callback function</li>
+            <li>The point is if you declare a callback function, you no need to pass argument in the calling sytax.</li>
+            <li>Passing argument to the callback is done by the first calling function by auto</li>
+            <li>You may check with <b>mainFunction</b> in Test20241201</li>
+            <li><b>mainFunction</b> do the argument assigment to the callback function , the magic is inside it</li>
+            </ol>
+            </li>
+
+            
+            <li><Link to="/Test2024120101">Test2024120101</Link>
+                    <ol>
+                      <li>Study promise, async , await</li>
+                      <li>Study Point: 
+                          <ol>
+                          <li>await return a PROMISE object</li>
+                          <li>If a function with a await function inside it, the function should have async</li>
+                          </ol>
+                          
+                      </li>
+                    </ol>
+            </li>
+
           </ul>
         </nav>
         <br/><br/>

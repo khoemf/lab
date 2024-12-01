@@ -33,6 +33,9 @@ import Test20240810a from './Components/Test20240810a';
 import Test20240810b from './Components/Test20240810b';
 import Test20240818 from './Components/Test20240818';
 import Test20241130 from './Components/Test20241130';
+import Test2024113001 from './Components/Test2024113001';
+import Test20241201 from './Components/Test20241201';
+import Test2024120101 from './Components/Test2024120101';
 
 
 
@@ -97,8 +100,9 @@ const router = createBrowserRouter([
   {path:"/Test20240810b/",element:<Test20240810b/>},
   {path:"/Test20240818/",element:<Test20240818/>},
   {path:"/Test20241130/",element:<Test20241130/>},
-  
-  
+  {path:"/Test2024113001/",element:<Test2024113001/>},  
+  {path:"/Test20241201/",element:<Test20241201/>},
+  {path:"/Test2024120101/",element:<Test2024120101/>},
   
 ]);
 
