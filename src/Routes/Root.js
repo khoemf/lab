@@ -217,6 +217,7 @@ export default function Root() {
                           <ol>
                           <li>await return a PROMISE object</li>
                           <li>If a function with a await function inside it, the function should have async</li>
+						  <li>Also study callback return value in each function (how to return, receive)</li>
                           </ol>
                           
                       </li>
