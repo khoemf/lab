@@ -78,7 +78,7 @@ export default function Test2024120101() {
       //             -- not waitFunctionWithPromise.then() [ no () after waitFunctionWithPromise]
       //             -- with promise, it must use then() to assign the next function/action
       //             -- Important, in the then(), then() should receive a function variable, 
-      //             -- so, it should pass () =>{} [i.e. () =>{waitFunctionWithPromise(3).then()}]
+      //             -- so, it should pass () =>{} into then() [i.e. () =>{waitFunctionWithPromise(3).then()}]
       //             -- not waitFunctionWithPromise(3)
       
       

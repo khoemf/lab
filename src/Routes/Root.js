@@ -194,8 +194,7 @@ export default function Root() {
                         </ol>
                         </li>
                     </ol>
-            </li>
-            Test2024120101
+            </li>            
             <li><Link to="/Test20241201">Test20241201</Link>
             <ol>
               <li>Study JS CALLBACK Mechanism</li>
@@ -222,7 +221,18 @@ export default function Root() {
                       </li>
                     </ol>
             </li>
-
+            <li><Link to="/Test20241226">Test20241226</Link>
+                <ol>
+                  <li>It is a classic Counter count program</li>
+                  <li>Demostrate the concept of React of use of one-way
+                  data flow, also known as unidirectional data flow</li>
+                  <li>One-way data flow means that all of the data in a React application flows from parent components to child components.</li>
+                  <li>Another common way to describe the flow of data in React is “Data flows down (or downstream), and events flow up (or upstream).”</li>
+                  <li>Child 永不能改由PARENT Components 傳來的 PROPS 值</li>
+                  <li>所以, 如PARENT 想CHILD Components 可 修改PAREENT 以PROPS 傳去的值 (data flows down), PARENT 需在PROPS 上傳一個EVENT , 用該EVENT UPDATE 番 D PARENT VARAIABLE (events flow up)</li>
+                </ol>
+            </li>
+            
           </ul>
         </nav>
         <br/><br/>
