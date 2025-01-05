@@ -4,23 +4,28 @@ import { useState,useEffect} from "react";
 
 export default function Test2024120101() {
   
-  ////////////////////////////////
+  ///////////////////////////////////////////////////////
   //Study Promis, async , await //
   //start with check the        //
   //   doStuffAsUsual();        //
   //   doStuffWithPromise();    //
   //   doStuffWithAsyncAwait(); //
-  ////////////////////////////////
+  // Also study callback return value in each function //
+  ///////////////////////////////////////////////////////
 
   const [textA , setTextA] = useState("Hello World!!!");
 
   
   useEffect(() => {        
   
-    const functionAA = ()=>{console.log("in functionAA!!")}
-    const functionBB = ()=>{
-      functionAA();
-      console.log("in functionBB!!")
+    const functionAA = (num)=>{
+		console.log("in functionAA!! Receive Num :: "+num)
+		return num;
+	}
+    const functionBB = (num)=>{
+	  console.log("==> start functionBB!! Receive Num :: " +num)
+      functionAA(num);
+      console.log("==> Exit functionBB!! Receive Num :: " +num)
     }
 
     const waitFunctionAA = ()=>{
@@ -33,6 +38,7 @@ export default function Test2024120101() {
         console.log("waitFunctionA ==> Delayed after "+ waitSec +" second .");
       }, actualWait);
       
+	  return waitSec;
     }
 
     //Study Point: If declare a function with Promise
@@ -49,7 +55,7 @@ export default function Test2024120101() {
             //resolve("resolve in waitFunctionWithPromise")
 
             //Tell the Promise object , in this case, the promise can be claimed as "RESOLVE"
-            resolve();
+            resolve(actualWait);
           }, actualWait);
         })
     
@@ -66,9 +72,9 @@ export default function Test2024120101() {
 
     const doStuffAsUsual = function(){
       //below function does not wait , promise, async
-      waitFunctionAA();
-      functionAA();
-      functionBB();
+      let num1 = waitFunctionAA();
+      functionAA(num1);
+      functionBB(num1);
       
     }
 
@@ -81,7 +87,7 @@ export default function Test2024120101() {
       //             -- so, it should pass () =>{} into then() [i.e. () =>{waitFunctionWithPromise(3).then()}]
       //             -- not waitFunctionWithPromise(3)
       
-      
+      //Study Point: waitFunctionWithPromise() will return a variable , it assign to $functionAA by auto
       waitFunctionWithPromise(2).then(
         () =>{
           waitFunctionWithPromise(3).then(functionAA).then(functionBB)
@@ -97,10 +103,10 @@ export default function Test2024120101() {
       //            -- that's why waitFunctionWithPromise() should return a Promise Object
       //            -- compare with execute order in doStuffWithPromise() , below is more readable
       try{
-        await waitFunctionWithPromise(2);
-        await waitFunctionWithPromise(3);
-        functionAA();
-        functionBB();
+        let num1 = await waitFunctionWithPromise(2);
+        let num2 = await waitFunctionWithPromise(3);
+        functionAA(num1);
+        functionBB(num2);
       }catch(error){
         console.log(error);
       }
@@ -116,8 +122,8 @@ export default function Test2024120101() {
     //test the result by running the following fuction one by one (by comment out)
 
     //doStuffAsUsual();
-    doStuffWithPromise();
-    //doStuffWithAsyncAwait();
+    //doStuffWithPromise();
+    doStuffWithAsyncAwait();
 
   }, []); // This runs only once after the initial render
 
