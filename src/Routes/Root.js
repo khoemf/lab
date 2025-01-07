@@ -229,9 +229,17 @@ export default function Root() {
                   data flow, also known as unidirectional data flow</li>
                   <li>One-way data flow means that all of the data in a React application flows from parent components to child components.</li>
                   <li>Another common way to describe the flow of data in React is “Data flows down (or downstream), and events flow up (or upstream).”</li>
-                  <li>Child 永不能改由PARENT Components 傳來的 PROPS 值</li>
+                  <li>Child <font color="red">永不能改變</font>由PARENT Components 傳來的 PROPS 值</li>
                   <li>所以, 如PARENT 想CHILD Components 可 修改PAREENT 以PROPS 傳去的值 (data flows down), PARENT 需在PROPS 上傳一個EVENT , 用該EVENT UPDATE 番 D PARENT VARAIABLE (events flow up)</li>
                 </ol>
+            </li>
+            
+            <li><Link to="/Test20250106">Test20250106</Link>
+              <ol>
+              <li>Display array , it <font color="red">must must</font> check if the array if emtpy. Since react will display the array when first init. And the array must be null. It does not work for map()</li>
+              <li>How to define/map a function component receive pros variable name. </li>
+              <li><font color="red">Important demo</font>. It gets data from API. Then pass the title and API result to a component [DisplayTableData]. [DisplayTableData] will display the value dynamically.</li>
+              </ol>
             </li>
             
           </ul>

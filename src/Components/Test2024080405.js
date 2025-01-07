@@ -11,6 +11,10 @@ import React from "react";
 ??=	x ??= y	x = x ?? (x = y)
  */
 
+export function Test2024080405DefaultLayout(){
+  return <div>Test2024080405DefaultLayout</div>;
+}
+
 //reference: https://react.dev/learn/conditional-rendering
 export function Test2024080405Component1() {
   return <div>Test2024080405Component1</div>;
@@ -30,10 +34,10 @@ export function Test2024080405Component4() {
   }
 
   export function Test2024080405IsLogin() {
-    return <div>IsLogin</div>;
+    return <div>IsLogin in Test2024080405IsLogin()</div>;
   }
   export function Test2024080405NoLogin() {
-    return <div>NoLogin</div>;
+    return <div>NoLogin in Test2024080405NoLogin()</div>;
   }
 
   export function Test2024080405ShowIfFalse() {
@@ -71,12 +75,18 @@ export default function Test2024080405() {
             isLogin && <Test2024080405Component1/>
         }
         <br/>
-        {isLogin?<Test2024080405IsLogin/>:<Test2024080405NoLogin/>}
+        {
+          //if $isLogin = true , display Test2024080405IsLogin
+          //if $isLogin = false , display Test2024080405NoLogin
+          isLogin?<Test2024080405IsLogin/>:<Test2024080405NoLogin/>
+        }
         <br/>
         {
-            //If the value is false , show the component
+            
             //The Logical OR assignment operator is used between two values.
             //If the first value is false, the second value is assigned.
+            
+            //If the value is false , show the component
             blVal || <Test2024080405ShowIfFalse/>
         }
         <br/>
