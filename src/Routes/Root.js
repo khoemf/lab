@@ -7,6 +7,10 @@ export default function Root() {
         <div></div>
         <nav>
           <ul>
+          <li>
+              <Link to="/BlankTemplate">Blank Template</Link>&nbsp;Copy this file for default Tempalte
+            </li>
+          
             <li>
               <Link to="/App">App.js</Link>
             </li>
@@ -112,6 +116,7 @@ export default function Root() {
             <li>
               <Link to="/Test20240807">Test20240807</Link>
               <ol>
+                <li>Good to always <font color="red">溫習</font></li>
                 <li>useState: <b>mutable / immutable / update previous value</b>. </li>
                 <li><b>get Form Input</b> by useRef</li>
                 <li>Add a single item to array and display it</li>
@@ -237,10 +242,19 @@ export default function Root() {
             <li><Link to="/Test20250106">Test20250106</Link>
               <ol>
               <li>Display array , it <font color="red">must must</font> check if the array if emtpy. Since react will display the array when first init. And the array must be null. It does not work for map()</li>
-              <li>How to define/map a function component receive pros variable name. </li>
+              <li>How to define/map a function component receive propsvariable name. </li>
               <li><font color="red">Important demo</font>. It gets data from API. Then pass the title and API result to a component [DisplayTableData]. [DisplayTableData] will display the value dynamically.</li>
               </ol>
             </li>
+            <li><Link to="/Test20250110">Test20250110</Link>
+                    <ol>
+                      <li>Store final display component in variable $displayUI. Conditional rending</li>
+                      <li>A function which needs <font color="red">receive variable (pass variable into function)</font>. The function pass to a componet with pros. Call the funciton in the component by arrow function syntax.</li>
+                      <li>Example for understanding function is a object in javascript</li>                      
+                      <li>useState() with object, how to update the object by set() function </li>
+                    </ol>
+            </li>
+
             
           </ul>
         </nav>

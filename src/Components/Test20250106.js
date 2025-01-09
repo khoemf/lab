@@ -54,7 +54,7 @@ export default function Test20250106() {
         //study point
         
         //if the function component DisplayTableData function definition receive variable named with "titleAry"
-        //the pros name must be same as the <DisplayTableData> ie the pros named with "titleAry"
+        //the props name must be same as the <DisplayTableData> ie the props named with "titleAry"
       }
       <DisplayTableData titleAry={tableTitle} rs={objProducts}/>
     </>

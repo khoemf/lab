@@ -103,6 +103,11 @@ export default function Test20240807() {
         return (
           <span key={i}>
             {i + 1}) I am <b>{ele.name}</b> and my age is <b>{ele.age}</b>.
+
+            {
+              //study Point:
+              //call a onClick function with passing variable $i
+            }
             <button type="button" onClick={() => handleDelete(i)}>
               Delete this row id:{i}
             </button>

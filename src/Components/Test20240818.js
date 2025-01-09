@@ -4,28 +4,29 @@ import React from 'react'
 // title : 65. Problem: Props Are Not Forwarded To Inner Elements
 //learn how to pass {children} props
 
-export function Test20240818ForDisplayTitle({title, children, ...pros}) {
+export function Test20240818ForDisplayTitle({title, children, ...props}) {
   //1
   //point to note : $children is a magic Props, the name must be children. Cannot change to others variable
-  //it shows all element/tag inside tag "Test20240818ForDisplayTitle"
+  //it shows all html tag inside/between tag "Test20240818ForDisplayTitle"
 
 
   //2
-  //"...pros" is a javascript feature called "Rest Property".
+  //"...props" is a javascript feature called "Rest Property".
   //This syntax groups all remaining object properties into a new object(named props in this case)
   //this syntax is very useful to set a tag with multiple attributes
 
   //If don't use this group syntax. It needs to pass {id , className, onClick} , type one by one
   //and set <span id={id} , className={className}, onClick={onClick}
-  //now you can append any other attributes in any of the tag "<Test20240818ForDisplayTitle>".
+  //now you can append any other attributes in the tag "<Test20240818ForDisplayTitle>".
+  //with syntax <span {...props}/>
   //no code change inside compontent "Test20240818ForDisplayTitle". 
-  //It appends the attribute to "<span>" automatically
+  //It appends the attribute in the $props to "<span>" automatically
 
 
   return (
     <>
       <hr/>
-      <b>Common Title</b> : <span {...pros}>{title}</span><br/><br/>
+      <b>Common Title</b> : <span {...props}>{title}</span><br/><br/>
       {children}
       <hr/>
     </>
